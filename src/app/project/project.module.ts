@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { ProjectRoutingModule } from './project-routing.module';
 
 import { ProjectAlecrimComponent } from './project-alecrim/project-alecrim.component';
@@ -13,6 +14,7 @@ import { ImageFluidComponent } from './common/image-fluid/image-fluid.component'
 import { ImageLeftComponent } from './common/image-left/image-left.component';
 import { ImageRightComponent } from './common/image-right/image-right.component';
 import { SeeMoreComponent } from './common/see-more/see-more.component';
+import { ProjectsGridComponent } from './projects-grid/projects-grid.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +27,12 @@ import { SeeMoreComponent } from './common/see-more/see-more.component';
     ImageFluidComponent,
     ImageLeftComponent,
     ImageRightComponent,
-    SeeMoreComponent
+    SeeMoreComponent,
+    ProjectsGridComponent
   ],
   imports: [
     CommonModule,
     ProjectRoutingModule
   ]
 })
-
 export class ProjectModule { }
