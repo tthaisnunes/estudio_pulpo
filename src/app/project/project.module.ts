@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { ProjectRoutingModule } from './project-routing.module';
+import { SharedModule } from '../shared/shared.module';
 
 import { ProjectAlecrimComponent } from './project-alecrim/project-alecrim.component';
 import { ProjectOperacoesSemDorComponent } from './project-operacoes-sem-dor/project-operacoes-sem-dor.component';
@@ -32,7 +32,8 @@ import { ProjectsGridComponent } from './projects-grid/projects-grid.component';
   ],
   imports: [
     CommonModule,
-    ProjectRoutingModule
+    ProjectRoutingModule,
+    SharedModule
   ]
 })
 export class ProjectModule { }
